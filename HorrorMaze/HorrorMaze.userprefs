@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MazeGenerator/Scripts/MazeGenerator.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/PickUp.js">
     <Files>
-      <File FileName="Assets/MazeGenerator/Scripts/MazeGenerator.cs" Line="321" Column="51" />
+      <File FileName="Assets/PickUp.js" Line="46" Column="7" />
+      <File FileName="Assets/RandomRoom.js" Line="5" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
