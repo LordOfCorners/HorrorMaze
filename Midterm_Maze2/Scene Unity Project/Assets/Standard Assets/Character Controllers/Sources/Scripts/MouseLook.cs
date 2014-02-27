@@ -16,41 +16,57 @@ using System.Collections;
 ///   -> Set the mouse look to use LookY. (You want the camera to tilt up and down like a head. The character already turns.)
 [AddComponentMenu("Camera-Control/Mouse Look")]
 public class MouseLook : MonoBehaviour {
-
+	
 	public enum RotationAxes { MouseXAndY = 0, MouseX = 1, MouseY = 2 }
 	public RotationAxes axes = RotationAxes.MouseXAndY;
-	public float sensitivityX = 15F;
-	public float sensitivityY = 15F;
-
+	public float mousesensitivityX = 15F;
+	public float mousesensitivityY = 15F;
+	
+	public float joysensitivityX = 3F;
+	public float joysensitivityY = 3F;
+	
 	public float minimumX = -360F;
 	public float maximumX = 360F;
-
+	
 	public float minimumY = -60F;
 	public float maximumY = 60F;
-
+	
 	float rotationY = 0F;
-
+	
+	
+	
 	void Update ()
 	{
+		
+		float Xon = Mathf.Abs (Input.GetAxis ("RightH"));
+		float Yon = Mathf.Abs (Input.GetAxis ("RightV"));
+		
 		if (axes == RotationAxes.MouseXAndY)
 		{
-			float rotationX = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * sensitivityX;
+			float rotationX = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * mousesensitivityX;
 			
-			rotationY += Input.GetAxis("Mouse Y") * sensitivityY;
+			rotationY += Input.GetAxis("Mouse Y") * mousesensitivityY;
 			rotationY = Mathf.Clamp (rotationY, minimumY, maximumY);
 			
 			transform.localEulerAngles = new Vector3(-rotationY, rotationX, 0);
 		}
 		else if (axes == RotationAxes.MouseX)
 		{
-			transform.Rotate(0, Input.GetAxis("Mouse X") * sensitivityX, 0);
+			if (Xon>.05){
+				transform.Rotate(0, Input.GetAxis("RightH") * joysensitivityX, 0);
+			}
+			transform.Rotate(0, Input.GetAxis("Mouse X") * mousesensitivityX, 0);
 		}
 		else
 		{
-			rotationY += Input.GetAxis("Mouse Y") * sensitivityY;
+			if (Yon>.05){
+				rotationY += Input.GetAxis("RightV") * joysensitivityY;
+			}
+			rotationY += Input.GetAxis("Mouse Y") * mousesensitivityY;
 			rotationY = Mathf.Clamp (rotationY, minimumY, maximumY);
 			
 			transform.localEulerAngles = new Vector3(-rotationY, transform.localEulerAngles.y, 0);
+			
 		}
 	}
 	
