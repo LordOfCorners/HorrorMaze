@@ -1,10 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Standard Assets/Character Controllers/Sources/Scripts/CharacterMotor.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/PickUp.js">
     <Files>
-      <File FileName="Assets/Standard Assets/Character Controllers/Sources/Scripts/MouseLook.cs" Line="79" Column="2" />
-      <File FileName="Assets/LetterScript.js" Line="9" Column="2" />
-      <File FileName="Assets/Standard Assets/Character Controllers/Sources/Scripts/CharacterMotor.js" Line="46" Column="7" />
+      <File FileName="Assets/PickUp.js" Line="20" Column="20" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
