@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/DoorOpen.js">
+    <Files>
+      <File FileName="Assets/objectPickUp.js" Line="13" Column="1" />
+      <File FileName="Assets/PickUp.js" Line="15" Column="37" />
+      <File FileName="Assets/OVR/Scripts/OVRPlayerController.cs" Line="77" Column="45" />
+      <File FileName="Assets/DoorOpen.js" Line="19" Column="25" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

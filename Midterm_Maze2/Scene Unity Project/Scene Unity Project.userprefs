@@ -1,8 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../../../openFrameworks 7/apps/Games/futbolForever/futbolForeverUnity/Assets/PlayMovie.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/PickUp.js">
     <Files>
-      <File FileName="../../../../../../openFrameworks 7/apps/Games/futbolForever/futbolForeverUnity/Assets/PlayMovie.cs" Line="10" Column="2" />
+      <File FileName="Assets/OVR/Scripts/OVRGamepadController.cs" Line="1" Column="1" />
+      <File FileName="Assets/PickUp.js" Line="27" Column="50" />
+      <File FileName="Assets/DoorOpen.js" Line="26" Column="1" />
+      <File FileName="Assets/OVR/Scripts/OVRPlayerController.cs" Line="114" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

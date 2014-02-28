@@ -73,8 +73,8 @@ public class OVRPlayerController : OVRComponent
 	protected Transform DirXform = null;
 	
 	// We can adjust these to influence speed and rotation of player controller
-	private float MoveScaleMultiplier     = 1.0f; 
-	private float RotationScaleMultiplier = 1.0f; 
+	private float MoveScaleMultiplier     = 2.5f; 
+	private float RotationScaleMultiplier = 1.3f; 
 	private bool  AllowMouseRotation      = true;
 	private bool  HaltUpdateMovement      = false;
 	
