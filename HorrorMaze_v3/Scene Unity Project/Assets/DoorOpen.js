@@ -18,12 +18,14 @@ private var openRot : Vector3;
 
 var player : GameObject;
 var pickUpScript : PickUp;
+var key : GameObject;
 
 function Start(){
 defaultRot = transform.eulerAngles;
 openRot = new Vector3 (defaultRot.x, defaultRot.y + DoorOpenAngle, defaultRot.z);
 player = GameObject.FindWithTag("Player");
 pickUpScript = player.GetComponent("PickUp");
+key = GameObject.Find("keyRenderer");
 }
 
 //Main function
@@ -38,6 +40,7 @@ transform.eulerAngles = Vector3.Slerp(transform.eulerAngles, openRot, Time.delta
 
 if(pickUpScript.hasKey == true && enter){
 open = !open;
+key.renderer.enabled = false;
 }
 }
 
